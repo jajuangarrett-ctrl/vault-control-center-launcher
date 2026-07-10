@@ -1,0 +1,13 @@
+{
+  "name": "vault-control-center-launcher",
+  "version": "0.1.0",
+  "description": "Adds a home ribbon icon that opens the Vault Control Center dashboard launcher.",
+  "main": "main.js",
+  "keywords": [
+    "obsidian-plugin",
+    "obsidian",
+    "dashboard"
+  ],
+  "author": "Franklin Garrett",
+  "license": "MIT"
+}

@@ -2,7 +2,7 @@
 
 const { Notice, Plugin, TFile } = require("obsidian");
 
-const LAUNCHER_NOTE = "Artifacts/Vault Control Center/Open Vault Control Center.md";
+const DASHBOARD_HTML = "Artifacts/Vault Control Center/vault-control-center.html";
 const DASHBOARD_URL = "http://127.0.0.1:8766/vault-control-center.html";
 
 module.exports = class VaultControlCenterLauncherPlugin extends Plugin {
@@ -26,10 +26,10 @@ module.exports = class VaultControlCenterLauncherPlugin extends Plugin {
   }
 
   async openDashboard() {
-    const launcher = this.app.vault.getAbstractFileByPath(LAUNCHER_NOTE);
-    if (launcher instanceof TFile) {
+    const dashboard = this.app.vault.getAbstractFileByPath(DASHBOARD_HTML);
+    if (dashboard instanceof TFile) {
       const leaf = this.app.workspace.getLeaf(true);
-      await leaf.openFile(launcher);
+      await leaf.openFile(dashboard);
       return;
     }
 

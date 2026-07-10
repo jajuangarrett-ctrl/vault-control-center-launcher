@@ -1,9 +1,9 @@
 # Vault Control Center Launcher
 
-Adds a home icon to Obsidian's left ribbon. Clicking it opens:
+Adds a home icon to Obsidian's left ribbon. Clicking it opens the dashboard HTML file directly:
 
-`Artifacts/Vault Control Center/Open Vault Control Center.md`
+`Artifacts/Vault Control Center/vault-control-center.html`
 
-That launcher note embeds the local Vault Control Center dashboard served from:
+If the HTML file is missing, the plugin falls back to the local server URL:
 
 `http://127.0.0.1:8766/vault-control-center.html`

@@ -1,7 +1,7 @@
 {
   "id": "vault-control-center-launcher",
   "name": "Vault Control Center Launcher",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "minAppVersion": "1.4.0",
   "description": "Adds a home ribbon icon that opens the Vault Control Center HTML dashboard.",
   "author": "Franklin Garrett",

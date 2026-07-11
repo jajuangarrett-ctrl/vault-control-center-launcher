@@ -4,6 +4,7 @@ const { Notice, Plugin, TFile } = require("obsidian");
 
 const DASHBOARD_HTML = "Artifacts/Vault Control Center/vault-control-center.html";
 const DASHBOARD_URL = "http://127.0.0.1:8766/vault-control-center.html";
+const HTML_VIEWER_TYPE = "html-viewer";
 
 module.exports = class VaultControlCenterLauncherPlugin extends Plugin {
   async onload() {
@@ -29,7 +30,15 @@ module.exports = class VaultControlCenterLauncherPlugin extends Plugin {
     const dashboard = this.app.vault.getAbstractFileByPath(DASHBOARD_HTML);
     if (dashboard instanceof TFile) {
       const leaf = this.app.workspace.getLeaf(true);
-      await leaf.openFile(dashboard);
+      try {
+        await leaf.setViewState({
+          type: HTML_VIEWER_TYPE,
+          state: { file: DASHBOARD_HTML },
+          active: true,
+        });
+      } catch (error) {
+        await leaf.openFile(dashboard);
+      }
       return;
     }
 

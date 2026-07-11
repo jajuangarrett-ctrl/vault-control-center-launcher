@@ -1,6 +1,6 @@
 # Vault Control Center Launcher
 
-Adds a home icon to Obsidian's left ribbon. Clicking it opens the dashboard HTML file directly:
+Adds a home icon to Obsidian's left ribbon. Clicking it opens the dashboard HTML file directly through the HTML Viewer tab:
 
 `Artifacts/Vault Control Center/vault-control-center.html`
 

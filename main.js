@@ -31,14 +31,9 @@ module.exports = class VaultControlCenterLauncherPlugin extends Plugin {
     if (dashboard instanceof TFile) {
       const leaf = this.app.workspace.getLeaf(true);
       try {
-        const basePath = this.app.vault.adapter.getBasePath?.();
-        const dashboardPath = basePath
-          ? `${basePath.replace(/\/+$/, "")}/${DASHBOARD_HTML}`
-          : null;
-
         await leaf.setViewState({
           type: HTML_VIEWER_TYPE,
-          state: dashboardPath ? { absPath: dashboardPath } : { file: DASHBOARD_HTML },
+          state: { file: DASHBOARD_HTML },
           active: true,
         });
       } catch (error) {

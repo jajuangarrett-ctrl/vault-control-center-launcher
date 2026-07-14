@@ -1,7 +1,7 @@
 {
   "name": "vault-control-center-launcher",
-  "version": "0.1.5",
-  "description": "Adds a home ribbon icon that opens the Vault Control Center HTML dashboard.",
+  "version": "0.1.6",
+  "description": "Adds a home ribbon icon that opens the native Vault Control Center plugin.",
   "main": "main.js",
   "keywords": [
     "obsidian-plugin",

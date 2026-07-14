@@ -2,7 +2,7 @@
   "id": "vault-control-center-launcher",
   "name": "Vault Control Center Launcher",
   "version": "0.1.6",
-  "minAppVersion": "1.4.0",
+  "minAppVersion": "1.12.7",
   "description": "Adds a home ribbon icon that opens the native Vault Control Center plugin.",
   "author": "Franklin Garrett",
   "authorUrl": "https://github.com/jajuangarrett-ctrl",
